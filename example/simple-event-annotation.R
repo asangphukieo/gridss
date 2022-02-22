@@ -14,7 +14,7 @@ simpleEventType <- function(gr) {
           "DUP")))))
 }
 # using the example in the GRIDSS /example directory
-vcf <- readVcf("gridss.full.chr12.1527326.DEL1024.vcf", "hg19")
+vcf <- readVcf("Tissue_gridss.vcf", "hg38")
 info(header(vcf)) = unique(as(rbind(as.data.frame(info(header(vcf))), data.frame(
 	row.names=c("SIMPLE_TYPE"),
 	Number=c("1"),
